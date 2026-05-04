@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+
+    <div class="topnav">
+      <a class="active" href="../index.htm">Home</a>
+      <a href="../news.htm">News & Updates</a>
+      <a href="../guide.htm">Guide</a>
+      <a href="../about.htm">About</a>
+    </div>
+    <title>v0.2.0</title>
+  </head>
+  <body>
+    <p><strong>So many more file types</strong>
+We have added/changed</p>
+<ul>
+<li>.mif loading/saving improved (and incompatible) from the MICA-GM version</li>
+<li>.png loading - now when you finish your masterpiece of MS-Paint quality artwork you can load it back</li>
+<li>Colour is now a 0-255 u8 instead of a 0-1 f32</li>
+<li>we support (but do <strong><em>NOT</em></strong> recomend using) duckdood&#39;s .ST file format <a href="https://github.com/DuckDood/readST">github page for duckdood&#39;s ST read/writer</a></li>
+</ul>
+<p><strong><em>how to run x86_64 (debian)</em></strong>
+extract <code>mica.tar.gz</code> and run the executable in the resulting folder</p>
+<h3 id="bugs">Bugs</h3>
+<ul>
+<li>inputting an empty save file path will cause MICA to crash</li>
+<li>inputting an incorrect save file path will cause MICA to crash</li>
+<li>inputting an empty load file path will cause MICA to crash except on .pngs</li>
+<li>inputting an incorrect load file path will cause MICA to crash except on .pngs</li>
+<li>inputting a non-numerical draw size causes a crash (somehow decimal resolutions work, don&#39;t ask how)</li>
+<li>big brush sizes 130+ randomly try to draw outside the canvas and causes a crash</li>
+</ul>
+
+<a href="https://github.com/milorad-co/mica-rs/releases/tag/v0.2.0">See full on github</a>
+  </body>
+</html>
