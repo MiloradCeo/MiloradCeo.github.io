@@ -33,12 +33,15 @@
       color: white;
   }
   mark {
-      background-color: #8dd1e0;
+      background-color: lightgray;
       color: black;
   }
   p {
-      line-height: 1.2;
+      line-height: 1.3;
   }
   div {
       text-align: center;
+  }
+  ul {
+      line-height: 1.3;
   }
